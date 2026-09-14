@@ -8,14 +8,13 @@ on:
     #   16:00 UTC -> ~12pm ET / 5pm London  (lunch break)
     #   23:00 UTC -> ~7pm ET / midnight London (evening prime time)
     # Each run generates + posts ONE video from the rotation, so 3 runs/day
-    # = 3 fresh posts/day. Edit freely — these are reasonable defaults,
+    # = 3 fresh posts/day. Edit freely - these are reasonable defaults,
     # not a guarantee; watch your own analytics after a couple of weeks
     # and shift the times toward whenever your actual audience is active.
     - cron: "0 12 * * *"
     - cron: "0 16 * * *"
     - cron: "0 23 * * *"
-  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
-
+  workflow_dispatch: {}
 permissions:
   contents: write
 
@@ -40,7 +39,6 @@ jobs:
 
       - name: Generate today's video(s)
         run: python scripts/generate_video.py --count 1
-
       - name: Commit generated video(s) to the repo
         id: commit
         run: |
@@ -56,11 +54,15 @@ jobs:
           fi
 
       - name: Post to Instagram (only if secrets are configured)
-        if: steps.commit.outputs.changed == 'true' && secrets.IG_ACCESS_TOKEN != ''
+        if: steps.commit.outputs.changed == 'true'
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_BUSINESS_ACCOUNT_ID: ${{ secrets.IG_BUSINESS_ACCOUNT_ID }}
         run: |
+          if [ -z "$IG_ACCESS_TOKEN" ]; then
+            echo "IG_ACCESS_TOKEN not set, skipping Instagram post."
+            exit 0
+          fi
           for f in output/*.mp4; do
             base=$(basename "$f" .mp4)
             [ -f "output/$base.txt" ] || continue
@@ -70,10 +72,14 @@ jobs:
           done
 
       - name: Queue to TikTok inbox (only if secrets are configured)
-        if: steps.commit.outputs.changed == 'true' && secrets.TIKTOK_ACCESS_TOKEN != ''
+        if: steps.commit.outputs.changed == 'true'
         env:
           TIKTOK_ACCESS_TOKEN: ${{ secrets.TIKTOK_ACCESS_TOKEN }}
         run: |
+          if [ -z "$TIKTOK_ACCESS_TOKEN" ]; then
+            echo "TIKTOK_ACCESS_TOKEN not set, skipping TikTok post."
+            exit 0
+          fi
           for f in output/*.mp4; do
             base=$(basename "$f" .mp4)
             url="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/output/$base.mp4"
