@@ -11,7 +11,7 @@ packs:
     bank_file: "content/scripts_bank.json"
     colors: ["#0B3D2E", "#1F7A5C"]        # deep green gradient (money/trust)
     accent_color: "#D4FF6B"                # lime highlight for key words/CTA
-    handle: "@yourfinancehandle"           # placeholder, update per platform
+    handle: "@moneybrainfacts"
     why: >
       Highest documented RPM/affiliate ecosystem among faceless niches
       (budgeting apps, investing platforms, credit tools, courses),
