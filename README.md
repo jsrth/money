@@ -13,14 +13,14 @@ vorgeschriebenen, faktengeprüften Skript in ~30–40 Sekunden ein fertiges
 ## Was hier drin ist
 
 ```
-content/scripts_bank.json     20 fertige, recherchierte Skripte (Startkapital)
+content/scripts_bank.json     35 fertige, recherchierte Skripte (Startkapital)
 config/niches.yaml             Nischen-Konfiguration + 2 Ausweich-Nischen
 scripts/build_video.py         Video-Rendering (PIL + ffmpeg, keine externen Assets nötig)
 scripts/generate_video.py      Orchestrator: nächstes Skript -> fertiges Video
 poster/instagram_post.py       Auto-Posting zu Instagram Reels (Meta Graph API)
 poster/tiktok_post.py          Auto-Posting/Draft zu TikTok (Content Posting API)
 .github/workflows/daily-content.yml   Täglicher Cron-Job, 100% kostenlos
-assets/music/                  Hier eigene lizenzfreie MP3s reinlegen (optional)
+assets/music/                  optional: eigene MP3s hier rein, sonst automatisch generierte Musik
 ```
 
 ## Warum dieses Format (und diese Nische)
@@ -37,6 +37,16 @@ assets/music/                  Hier eigene lizenzfreie MP3s reinlegen (optional)
   monetarisierbaren faceless-Nischen genannt — großes Affiliate-Ökosystem
   (Budget-Apps, Investment-Plattformen, Kreditkarten), global evergreen,
   und lässt sich sauber faktenbasiert halten (siehe Disclaimer unten).
+- **Auf Reichweite getrimmt:** Hooks in den ersten 1-2 Sekunden, Videos
+  bewusst kurz gehalten (~15-25s — Algorithmen gewichten die
+  Fertigschau-Rate stark), und viele CTAs sind bewusst
+  Kommentar-/Save-/Share-Bait ("Comment your worst...", "Tag someone
+  who...", "Save this before...") — Kommentare, Saves und Shares wiegen
+  auf TikTok/Reels deutlich schwerer fürs Ausspielen als reine Likes.
+  Musik läuft automatisch mit: prozedural generierte Ambient-Beds
+  (ffmpeg-synthetisiert, jedes Video leicht anders), kein manuelles
+  Hochladen von Tracks nötig — eigene MP3s in `assets/music/` überschreiben
+  das weiterhin, falls gewünscht.
 
 Zwei Ausweich-Nischen liegen vorbereitet in `config/niches.yaml`
 ("ai-tools", "curiosity-facts") — falls die Finance-Nische nicht zieht oder
@@ -62,7 +72,8 @@ Hashtags) pro Video.
    brauchst du stattdessen z. B. GitHub Releases + einen Token).
 2. Diesen Ordner hochladen/pushen.
 3. Fertig — der Workflow in `.github/workflows/daily-content.yml` läuft ab
-   jetzt automatisch **jeden Tag um 14:00 UTC** und erzeugt ein neues Video.
+   jetzt automatisch **3× täglich** (12, 16 und 23 Uhr UTC — auf Peak-Zeiten
+   für ein US/UK-lastiges Publikum getrimmt) und erzeugt ein neues Video.
    Manuell testen: Tab "Actions" → "Daily content run" → "Run workflow".
 
 Das allein liefert dir bereits **täglich ein fertiges Video im Repo** — auch

@@ -282,6 +282,286 @@
       "cta": "Look up your card's payoff calculator this week.",
       "hashtags": ["#creditcarddebt", "#debtfree", "#personalfinance", "#moneytips", "#financialliteracy"],
       "category": "facts"
+    },
+    {
+      "id": "mp-021",
+      "title": "The $1 rule that exposes every bad purchase",
+      "hook": "Divide the price by how many times you'll actually use it.",
+      "lines": [
+        "A $120 jacket worn 3 times: $40 per wear.",
+        "A $25 jacket worn 200 times: 12 cents per wear.",
+        "Price isn't the cost. Cost-per-use is the cost.",
+        "Expensive things you use daily are often cheaper than 'bargains' you don't."
+      ],
+      "cta": "Comment your worst cost-per-wear purchase. We've all got one.",
+      "hashtags": ["#moneytips", "#costperuse", "#mindfulspending", "#personalfinance", "#budgeting"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-022",
+      "title": "Why your brain treats a $20 bill and a tap card differently",
+      "hook": "Same $20. Two totally different reactions in your brain.",
+      "lines": [
+        "Handing over cash activates pain-processing regions.",
+        "Tapping a card barely registers as a loss at all.",
+        "Neither reaction is about the actual money.",
+        "It's about how visible the loss is to you."
+      ],
+      "cta": "Follow if you want to actually feel your spending again.",
+      "hashtags": ["#moneypsychology", "#behavioraleconomics", "#spendinghabits", "#financetips", "#neuroscience"],
+      "category": "cognitive-bias"
+    },
+    {
+      "id": "mp-023",
+      "title": "The 'just this once' purchase, 52 times a year",
+      "hook": "You don't buy weekly takeout. You buy 'just this once,' 52 times.",
+      "lines": [
+        "Each one feels like a standalone decision.",
+        "None of them feel like a pattern.",
+        "But your bank statement doesn't track feelings — it tracks totals.",
+        "Zoom out before you judge any single purchase."
+      ],
+      "cta": "Save this. Look at your statement tonight, not tomorrow.",
+      "hashtags": ["#budgeting", "#moneymindset", "#spendinghabits", "#personalfinance", "#moneytips"],
+      "category": "behavior"
+    },
+    {
+      "id": "mp-024",
+      "title": "What your first money memory says about you now",
+      "hook": "Your money habits today were mostly set before you turned 7.",
+      "lines": [
+        "Kids absorb how parents talk about money — not what parents say to them.",
+        "Scarcity, secrecy, or ease around money as a kid becomes your default as an adult.",
+        "You didn't choose your money mindset. You inherited it.",
+        "You CAN rewrite it — but only once you can name it."
+      ],
+      "cta": "Comment 'scarcity' or 'ease' — which one did you grow up with?",
+      "hashtags": ["#moneymindset", "#financialtrauma", "#moneypsychology", "#personalfinance", "#generationalwealth"],
+      "category": "psychology"
+    },
+    {
+      "id": "mp-025",
+      "title": "The receipt trick that cuts spending without a budget",
+      "hook": "Keep every receipt for one week. Don't change anything else.",
+      "lines": [
+        "No budgeting. No tracking app. Just keep the paper.",
+        "By day 4, most people already start buying less.",
+        "Not because of willpower — because of visibility.",
+        "You can't manage what you can't see."
+      ],
+      "cta": "Try it this week. Tag a friend who needs the challenge too.",
+      "hashtags": ["#budgetingtips", "#moneychallenge", "#savingmoney", "#personalfinance", "#moneytips"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-026",
+      "title": "Why 'I'm bad with money' becomes true",
+      "hook": "Calling yourself 'bad with money' is a self-fulfilling prophecy.",
+      "lines": [
+        "The label removes responsibility — so you stop trying to improve.",
+        "'I'm bad with money' means every overspend confirms what you 'already knew'.",
+        "Swap the identity: 'I'm learning to manage money.'",
+        "Same mistakes, completely different trajectory."
+      ],
+      "cta": "Say the new sentence out loud. Yes, actually.",
+      "hashtags": ["#moneymindset", "#selfidentity", "#financialliteracy", "#moneypsychology", "#growthmindset"],
+      "category": "mindset"
+    },
+    {
+      "id": "mp-027",
+      "title": "The 2-minute check that prevents most debt",
+      "hook": "Before financing anything, ask one question.",
+      "lines": [
+        "'Could I pay this in cash if I had to?'",
+        "If the honest answer is no, that's information — not just a feeling.",
+        "Financing isn't wrong. Financing without asking this is how debt sneaks up.",
+        "Two minutes of honesty beats two years of payments."
+      ],
+      "cta": "Save this before your next 'buy now, pay later' checkout.",
+      "hashtags": ["#debtfree", "#moneytips", "#financialliteracy", "#personalfinance", "#buynowpaylater"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-028",
+      "title": "Why two people with the same salary end up worlds apart",
+      "hook": "Same job. Same salary. Ten years later: completely different net worth.",
+      "lines": [
+        "One automated savings the day they got paid.",
+        "The other planned to save 'whatever's left over'.",
+        "There's almost never anything left over.",
+        "Pay yourself first isn't a slogan — it's the entire mechanism."
+      ],
+      "cta": "Is your savings automatic or 'whatever's left'? Be honest.",
+      "hashtags": ["#payyourselffirst", "#savingmoney", "#wealthbuilding", "#personalfinance", "#moneytips"],
+      "category": "behavior"
+    },
+    {
+      "id": "mp-029",
+      "title": "The discount that costs you a friendship",
+      "hook": "Multi-level 'business opportunities' target your relationships on purpose.",
+      "lines": [
+        "The product is rarely the real business model.",
+        "Recruiting people you trust is.",
+        "Most participants lose money — not because they didn't try hard enough.",
+        "The math of the structure is built for that outcome."
+      ],
+      "cta": "Know someone getting pulled in? Send them this.",
+      "hashtags": ["#mlmawareness", "#moneyfacts", "#financialliteracy", "#personalfinance", "#scamawareness"],
+      "category": "facts"
+    },
+    {
+      "id": "mp-030",
+      "title": "Why 'I'll start saving when I earn more' rarely happens",
+      "hook": "The savings rate you have at $40k is usually the savings rate you have at $80k.",
+      "lines": [
+        "Income doubles. Lifestyle quietly doubles with it.",
+        "The habit was never really about the amount available.",
+        "It's a percentage decision, not a leftover decision.",
+        "Fix the percentage now — the raise won't fix it for you."
+      ],
+      "cta": "What % do you save right now? Comment the number.",
+      "hashtags": ["#savingsrate", "#personalfinance", "#moneymindset", "#wealthbuilding", "#financialliteracy"],
+      "category": "mindset"
+    },
+    {
+      "id": "mp-031",
+      "title": "The 'sunk cost' trap draining your wallet right now",
+      "hook": "You keep paying for the gym you hate because you already paid for the year.",
+      "lines": [
+        "That money is already gone — spent, regardless of what you do next.",
+        "Continuing to use something you don't want doesn't get it back.",
+        "The only real question is: what's the best use of your time starting now?",
+        "Past spending is not a reason for future suffering."
+      ],
+      "cta": "What are you sunk-cost-ing right now? Comment it.",
+      "hashtags": ["#sunkcostfallacy", "#moneypsychology", "#behavioraleconomics", "#moneymindset", "#financetips"],
+      "category": "cognitive-bias"
+    },
+    {
+      "id": "mp-032",
+      "title": "Why round numbers make you overspend",
+      "hook": "$19.99 isn't about looking cheaper. It's about which digit your brain reads first.",
+      "lines": [
+        "Your brain anchors on the leftmost digit — '1', not '9.99'.",
+        "That's why $19.99 feels closer to $10 than to $20.",
+        "Retailers have known this for a century. Now you do too.",
+        "Round the price up in your head before you decide."
+      ],
+      "cta": "Try it on your next 'too good to pass up' price tag.",
+      "hashtags": ["#pricingpsychology", "#consumerpsychology", "#moneytips", "#shoppinghacks", "#behavioraleconomics"],
+      "category": "cognitive-bias"
+    },
+    {
+      "id": "mp-033",
+      "title": "The vacation that's still costing you a year later",
+      "hook": "The average financed vacation is still being paid off after the memories fade.",
+      "lines": [
+        "The trip lasts 7 days. The interest can last 18 months.",
+        "Nobody remembers the APR in the photos.",
+        "A funded trip and a financed trip feel identical — until the statement arrives.",
+        "Save first, travel after. Boring. Also correct."
+      ],
+      "cta": "Planning a trip? Save this before you book.",
+      "hashtags": ["#travelbudget", "#debtfree", "#personalfinance", "#moneytips", "#savingmoney"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-034",
+      "title": "Why watching your net worth grow changes your brain",
+      "hook": "People who track net worth monthly save more — without trying to.",
+      "lines": [
+        "Seeing the number move is its own reward.",
+        "Your brain starts protecting the trend line without being told to.",
+        "Tracking isn't about the spreadsheet. It's about making progress visible.",
+        "What gets measured quietly starts managing itself."
+      ],
+      "cta": "Do you track it monthly, yearly, or never? Comment below.",
+      "hashtags": ["#networth", "#wealthbuilding", "#financialliteracy", "#moneymindset", "#personalfinance"],
+      "category": "mindset"
+    },
+    {
+      "id": "mp-035",
+      "title": "The interest rate that makes 'later' expensive",
+      "hook": "Waiting one year to start investing $300/month can cost tens of thousands by retirement.",
+      "lines": [
+        "Not because of the missed $3,600.",
+        "Because of every year of growth that $3,600 never got to compound.",
+        "The market doesn't care about your excuses for waiting.",
+        "It only compounds the money that's actually in it."
+      ],
+      "cta": "Illustrative example, not a return guarantee. Start the month you're ready — today beats 'someday'.",
+      "hashtags": ["#investing101", "#compoundinterest", "#wealthbuilding", "#financialeducation", "#moneytips"],
+      "category": "facts"
+    },
+    {
+      "id": "mp-036",
+      "title": "How I'd budget starting from zero, no age attached",
+      "hook": "If I had to rebuild my finances from zero, here's the exact order.",
+      "lines": [
+        "One: track every expense for 14 days, no changes yet, just data.",
+        "Two: automate one savings transfer the day you're paid, any amount.",
+        "Three: build a 1-month cash cushion before touching anything else.",
+        "Four: only then start thinking about investing or extra debt payoff."
+      ],
+      "cta": "Steal this order. Save it before payday.",
+      "hashtags": ["#budgeting", "#personalfinance", "#moneytips", "#financialliteracy", "#savingmoney"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-037",
+      "title": "Still tracking spending in your head? Start here",
+      "hook": "If you're still tracking spending 'in your head,' this is the fix.",
+      "lines": [
+        "Your brain is bad at running totals — not a character flaw, just biology.",
+        "One weekly 5-minute review beats daily mental math every time.",
+        "Same day, same time, every week. Consistency beats intensity.",
+        "The goal isn't perfection. It's just not being surprised anymore."
+      ],
+      "cta": "Comment 'weekly' if you're starting this Sunday.",
+      "hashtags": ["#budgetingtips", "#moneymanagement", "#personalfinance", "#moneytips", "#financialliteracy"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-038",
+      "title": "The 3-account framework, steal it this week",
+      "hook": "Steal this 3-account framework if your money always feels tangled.",
+      "lines": [
+        "Account 1: bills only — fixed amount in, nothing else touches it.",
+        "Account 2: spending — whatever's left after bills, guilt-free.",
+        "Account 3: savings — moved the day you get paid, before you see it.",
+        "Three accounts, zero decisions needed once it's set up."
+      ],
+      "cta": "Set this up once. Never think about it again.",
+      "hashtags": ["#moneysystem", "#budgeting", "#personalfinance", "#moneytips", "#financialliteracy"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-039",
+      "title": "I tracked every coffee for 30 days. Here's the number",
+      "hook": "I tracked every small purchase for 30 days straight. The total surprised me.",
+      "lines": [
+        "Not one big purchase. Forty-one small ones under $10.",
+        "Individually, every single one felt harmless.",
+        "Added up, they outweighed one 'big' impulse buy I'd been avoiding.",
+        "Small and frequent beats big and rare — almost every time."
+      ],
+      "cta": "Try tracking just 7 days. Comment what surprises you.",
+      "hashtags": ["#moneytracking", "#budgeting", "#spendinghabits", "#personalfinance", "#moneytips"],
+      "category": "behavior"
+    },
+    {
+      "id": "mp-040",
+      "title": "The blunt rule almost nobody follows",
+      "hook": "Never finance something that loses value the moment you own it.",
+      "lines": [
+        "Cars, furniture, electronics — worth less the second you buy them.",
+        "Financing a depreciating asset means paying interest on a shrinking number.",
+        "Save and buy those. Finance only what builds value or income.",
+        "Ten words to live by, if you actually follow them."
+      ],
+      "cta": "Disagree? Tell me why in the comments.",
+      "hashtags": ["#moneyrules", "#debtfree", "#personalfinance", "#moneytips", "#financialliteracy"],
+      "category": "mindset"
     }
   ]
 }

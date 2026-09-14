@@ -2,9 +2,18 @@ name: Daily content run
 
 on:
   schedule:
-    # 14:00 UTC daily — good mid-afternoon/evening posting time across
-    # most English-speaking timezones. Edit to taste (cron is UTC).
-    - cron: "0 14 * * *"
+    # 3x/day, spread across peak engagement windows for a US/UK-leaning
+    # English audience (cron is UTC):
+    #   12:00 UTC -> ~8am ET / 1pm London   (morning commute/scroll)
+    #   16:00 UTC -> ~12pm ET / 5pm London  (lunch break)
+    #   23:00 UTC -> ~7pm ET / midnight London (evening prime time)
+    # Each run generates + posts ONE video from the rotation, so 3 runs/day
+    # = 3 fresh posts/day. Edit freely — these are reasonable defaults,
+    # not a guarantee; watch your own analytics after a couple of weeks
+    # and shift the times toward whenever your actual audience is active.
+    - cron: "0 12 * * *"
+    - cron: "0 16 * * *"
+    - cron: "0 23 * * *"
   workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
 
 permissions:

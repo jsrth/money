@@ -161,6 +161,41 @@ def build_silent_audio(tmpdir: Path, duration: float) -> Path:
     return out
 
 
+# A handful of root notes (Hz) for a simple two-voice pad + soft pulse.
+# Picked from a minor-leaning set so it stays calm/ambient rather than
+# jingly - fits a finance/education tone without fighting the captions.
+_MUSIC_ROOTS = [196.0, 220.0, 246.94, 164.81, 174.61]  # G3, A3, B3, E3, F3
+
+
+def build_generated_music(tmpdir: Path, duration: float, seed: int = 0) -> Path:
+    """Procedurally synthesizes a short ambient pad + soft pulse loop with
+    ffmpeg's aevalsrc - no external audio files, no licensing to worry
+    about, and every video gets a slightly different (but always calm)
+    bed so a daily batch doesn't sound identical. This is the default;
+    dropping real .mp3 files into assets/music/ still overrides it."""
+    rng = random.Random(seed)
+    root = rng.choice(_MUSIC_ROOTS)
+    fifth = root * 1.4983  # perfect fifth
+    octave = root * 2.0
+    pulse_hz = root / 2.0
+    pulse_period = rng.choice([0.5, 0.6, 0.75])
+    lfo = round(rng.uniform(0.1, 0.22), 3)
+
+    expr = (
+        f"0.12*sin(2*PI*{root:.2f}*t)"
+        f"+0.08*sin(2*PI*{fifth:.2f}*t)"
+        f"+0.045*sin(2*PI*{octave:.2f}*t)*sin(2*PI*{lfo}*t)"
+        f"+0.08*sin(2*PI*{pulse_hz:.2f}*t)*exp(-mod(t\\,{pulse_period})*7)"
+    )
+    out = tmpdir / "generated_music.m4a"
+    cmd = [
+        "ffmpeg", "-y", "-f", "lavfi", "-i", f"aevalsrc={expr}:s=44100",
+        "-t", str(duration), "-c:a", "aac", str(out),
+    ]
+    subprocess.run(cmd, check=True, capture_output=True)
+    return out
+
+
 def pick_music(music_dir: Path) -> Path | None:
     if not music_dir.exists():
         return None
@@ -174,10 +209,13 @@ def build_video(script: dict, colors: tuple[str, str], accent_color: str, handle
     beats = [script["hook"], *script["lines"], script["cta"]]
     durations = []
     for i, text in enumerate(beats):
-        # reading-speed based duration, floor 2.4s, ceil 4.5s; hook/cta linger longer
-        base = max(2.4, min(4.5, len(text) / 14))
+        # reading-speed based duration, floor 2.2s, ceil 4.0s; hook/cta linger
+        # slightly longer. Kept snappy on purpose: short-form algorithms
+        # weight completion rate heavily, and 15-25s total tends to hold
+        # attention better than long lingering beats.
+        base = max(2.2, min(4.0, len(text) / 15))
         if i in (0, len(beats) - 1):
-            base += 0.6
+            base += 0.4
         durations.append(round(base, 2))
     total_duration = sum(durations) + 1.2  # tail for footer
 
@@ -233,16 +271,22 @@ def build_video(script: dict, colors: tuple[str, str], accent_color: str, handle
         if music:
             audio_cmd = [
                 "ffmpeg", "-y", "-i", str(video_only), "-stream_loop", "-1", "-i", str(music),
-                "-filter_complex", f"[1:a]afade=in:st=0:d=1,afade=out:st={total_duration-1:.2f}:d=1,volume=0.35[a]",
+                "-filter_complex", f"[1:a]afade=in:st=0:d=1,afade=out:st={total_duration-1:.2f}:d=1,volume=0.35,aformat=channel_layouts=stereo[a]",
                 "-map", "0:v", "-map", "[a]", "-t", str(total_duration),
                 "-c:v", "copy", "-c:a", "aac", str(out_path),
             ]
         else:
-            silent = build_silent_audio(tmpdir, total_duration)
+            # No hand-picked mp3 available -> procedurally generated ambient
+            # bed by default (see build_generated_music). Seeded from the
+            # script id so it's reproducible per script but varies across
+            # the bank.
+            seed = abs(hash(script.get("id", ""))) % (2 ** 31)
+            bed = build_generated_music(tmpdir, total_duration, seed=seed)
             audio_cmd = [
-                "ffmpeg", "-y", "-i", str(video_only), "-i", str(silent),
-                "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac",
-                "-shortest", str(out_path),
+                "ffmpeg", "-y", "-i", str(video_only), "-i", str(bed),
+                "-filter_complex", f"[1:a]afade=in:st=0:d=1,afade=out:st={total_duration-1:.2f}:d=1,aformat=channel_layouts=stereo[a]",
+                "-map", "0:v", "-map", "[a]", "-t", str(total_duration),
+                "-c:v", "copy", "-c:a", "aac", str(out_path),
             ]
         subprocess.run(audio_cmd, check=True, capture_output=True)
 
