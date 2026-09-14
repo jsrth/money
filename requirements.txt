@@ -1,0 +1,7 @@
+pillow
+numpy
+pyyaml
+requests
+# optional, only needed if you switch a niche pack to AI-voice narration
+# instead of the default silent/text-only format:
+# edge-tts

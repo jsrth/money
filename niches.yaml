@@ -1,0 +1,56 @@
+# Niche packs for the content engine.
+# "active" selects which pack orchestrator/generate_video.py uses by default.
+# Swap it any time content/<niche>_bank.json exists with the same structure
+# as content/scripts_bank.json.
+
+active: money-psychology
+
+packs:
+  money-psychology:
+    label: "Money Psychology & Financial Literacy"
+    bank_file: "content/scripts_bank.json"
+    colors: ["#0B3D2E", "#1F7A5C"]        # deep green gradient (money/trust)
+    accent_color: "#D4FF6B"                # lime highlight for key words/CTA
+    handle: "@yourfinancehandle"           # placeholder, update per platform
+    why: >
+      Highest documented RPM/affiliate ecosystem among faceless niches
+      (budgeting apps, investing platforms, credit tools, courses),
+      globally evergreen, easy to keep 100% factual and non-"junk"
+      by sticking to documented behavioral-finance research and
+      neutral historical facts rather than hot takes or advice.
+    monetization:
+      - "Creator funds: TikTok Creator Rewards Program, YouTube Shorts (needs follower/view thresholds)"
+      - "Affiliate: budgeting apps, investing platforms, comparison sites (disclose per FTC/local rules)"
+      - "Own digital product later: a simple budgeting template / mini-course"
+      - "Sponsorships once the account has traction (fintech apps love this niche)"
+
+  ai-tools:
+    label: "AI Tools & Productivity"
+    bank_file: "content/ai_tools_bank.json"   # not yet written — see README
+    colors: ["#0E1027", "#3A2E8C"]
+    accent_color: "#7CF5FF"
+    handle: "@yourtoolshandle"
+    why: >
+      Trending topic with strong recurring SaaS affiliate commissions
+      (20-40% recurring is common). More manual effort: needs short
+      screen-recorded demos of real tools rather than pure text, so it's
+      a good phase-2 niche once the pipeline is proven.
+    monetization:
+      - "SaaS affiliate programs (recurring commissions)"
+      - "Sponsored tool spotlights once you have reach"
+      - "Own resource (curated tool directory / newsletter)"
+
+  curiosity-facts:
+    label: "Science & Psychology Curiosity Facts"
+    bank_file: "content/curiosity_bank.json"   # not yet written — see README
+    colors: ["#1A1A2E", "#8B5CF6"]
+    accent_color: "#FFD166"
+    handle: "@yourfactshandle"
+    why: >
+      Lowest legal/compliance risk (no financial claims), broad
+      shareability, good fallback if the finance niche needs a reset.
+      Lower RPM than finance but very brand-safe for sponsors.
+    monetization:
+      - "Creator funds"
+      - "Book/course affiliate links (curiosity -> learning products)"
+      - "Brand-safe sponsorships"

@@ -1,0 +1,287 @@
+{
+  "niche": "money-psychology",
+  "channel_bio": "Sharp, science-backed money psychology in 30 seconds. Not financial advice — just the patterns behind how people really spend, save, and think about money.",
+  "disclaimer": "Educational content only. Not financial, investment, tax or legal advice. Always do your own research before making financial decisions.",
+  "scripts": [
+    {
+      "id": "mp-001",
+      "title": "The $100 you 'saved' that isn't real",
+      "hook": "That coupon didn't save you money.",
+      "lines": [
+        "You spent $40 on a $140 item marked down 30%.",
+        "You didn't save $40.",
+        "You spent $40.",
+        "Your brain just tricked you into feeling good about it."
+      ],
+      "cta": "This is called anchoring bias. Follow for more money traps your brain sets.",
+      "hashtags": ["#moneypsychology", "#personalfinance", "#behavioraleconomics", "#moneymindset", "#financetips"],
+      "category": "cognitive-bias"
+    },
+    {
+      "id": "mp-002",
+      "title": "Why rich people talk about money differently",
+      "hook": "Poor people say 'I can't afford that.' Rich people ask 'how can I afford that?'",
+      "lines": [
+        "One sentence shuts your brain down.",
+        "The other keeps it searching for options.",
+        "It's not about the money you have.",
+        "It's about the question you let yourself ask."
+      ],
+      "cta": "Save this for the next time you want to say 'I can't.'",
+      "hashtags": ["#moneymindset", "#wealthbuilding", "#financialfreedom", "#richmindset", "#moneytips"],
+      "category": "mindset"
+    },
+    {
+      "id": "mp-003",
+      "title": "The real reason payday feels broke by day 10",
+      "hook": "Lifestyle creep is the quiet reason you never feel ahead.",
+      "lines": [
+        "You get a raise. You upgrade your apartment.",
+        "You get a bonus. You upgrade your car.",
+        "Income goes up. Spending matches it exactly.",
+        "Net worth stays flat for years."
+      ],
+      "cta": "The fix: bank the raise, keep the lifestyle. Follow for part 2.",
+      "hashtags": ["#lifestylecreep", "#personalfinance", "#savingmoney", "#moneytips", "#financialliteracy"],
+      "category": "behavior"
+    },
+    {
+      "id": "mp-004",
+      "title": "A $20 bill in 1913 vs today",
+      "hook": "$20 in 1913 had the buying power of about $650 today.",
+      "lines": [
+        "That's not inflation being 'a bit high'.",
+        "That's a currency losing 97% of its value in a century.",
+        "Cash sitting still is not 'safe'.",
+        "It's guaranteed to shrink."
+      ],
+      "cta": "This is why 'saving' and 'investing' are not the same word.",
+      "hashtags": ["#inflation", "#moneyfacts", "#financialeducation", "#economics", "#wealthbuilding"],
+      "category": "facts"
+    },
+    {
+      "id": "mp-005",
+      "title": "The 3-second rule that kills impulse buys",
+      "hook": "Every impulse purchase starts with a feeling, not a need.",
+      "lines": [
+        "Before you buy: name the emotion you feel right now.",
+        "Bored? Stressed? Scrolling at midnight?",
+        "If the feeling disappears in 3 seconds, so does the 'need'.",
+        "Real needs survive being named."
+      ],
+      "cta": "Try it on your next 'add to cart'. Comment 'saved' if this helped.",
+      "hashtags": ["#impulsebuying", "#moneytips", "#budgeting", "#savingmoney", "#moneypsychology"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-006",
+      "title": "Why a raise never feels like enough",
+      "hook": "Hedonic adaptation: the reason more money stops making you happier.",
+      "lines": [
+        "You hit a goal. Happy for two weeks.",
+        "Then it's the new normal.",
+        "Your brain resets the bar and wants more.",
+        "This isn't a personal failure — it's wired into you."
+      ],
+      "cta": "Knowing this is the first step to breaking the loop.",
+      "hashtags": ["#hedonicadaptation", "#moneymindset", "#psychology", "#financialfreedom", "#wealthmindset"],
+      "category": "psychology"
+    },
+    {
+      "id": "mp-007",
+      "title": "The envelope trick that outperforms every app",
+      "hook": "Cash physically leaving your hand hurts more than a tap.",
+      "lines": [
+        "Card payments feel like nothing — no pain, no memory.",
+        "Studies show people spend up to 15% more paying by card.",
+        "Try cash for one category this month: eating out.",
+        "Watch what happens to the total."
+      ],
+      "cta": "This isn't about being 'old school'. It's about friction.",
+      "hashtags": ["#budgetingtips", "#cashenvelope", "#moneytips", "#personalfinance", "#savingmoney"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-008",
+      "title": "Compound interest, explained in 25 seconds",
+      "hook": "$200 a month from age 25 beats $500 a month starting at 35.",
+      "lines": [
+        "Same total contributed by 65. Wildly different result.",
+        "Starting at 25: roughly double the ending balance.",
+        "The gap isn't the amount. It's the years it gets to compound.",
+        "Time in the market is the actual asset."
+      ],
+      "cta": "This is illustrative, not a return guarantee — always check current numbers.",
+      "hashtags": ["#compoundinterest", "#investing101", "#financialeducation", "#moneytips", "#wealthbuilding"],
+      "category": "facts"
+    },
+    {
+      "id": "mp-009",
+      "title": "Why 'treat yourself' culture is quietly expensive",
+      "hook": "A $6 coffee isn't the problem. The story around it is.",
+      "lines": [
+        "'I deserve this' turns a habit into an identity.",
+        "Identities are much harder to budget than habits.",
+        "You can still get the coffee.",
+        "Just notice which sentence you're telling yourself."
+      ],
+      "cta": "Awareness costs nothing. Follow for more money psychology.",
+      "hashtags": ["#moneymindset", "#spendinghabits", "#selfawareness", "#budgeting", "#financetips"],
+      "category": "mindset"
+    },
+    {
+      "id": "mp-010",
+      "title": "The subscription trap, by the numbers",
+      "hook": "The average person underestimates monthly subscriptions by 2.5x.",
+      "lines": [
+        "You think it's $40. It's usually closer to $100.",
+        "Streaming, apps, storage, memberships — they hide in plain sight.",
+        "None of them ask permission to renew.",
+        "One audit a year can recover hundreds."
+      ],
+      "cta": "Check your bank statement today. Comment your worst forgotten sub.",
+      "hashtags": ["#subscriptions", "#moneysavingtips", "#budgeting", "#personalfinance", "#moneyhacks"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-011",
+      "title": "Why lottery winners often go broke",
+      "hook": "About 70% of people who get sudden windfalls lose it within years.",
+      "lines": [
+        "It's rarely about the money itself.",
+        "It's spending habits that were never rebuilt to match new income.",
+        "Money doesn't fix money behavior.",
+        "It just makes the existing behavior bigger."
+      ],
+      "cta": "The skill that matters isn't earning — it's managing.",
+      "hashtags": ["#moneymindset", "#financialliteracy", "#wealthbuilding", "#moneyfacts", "#personalfinance"],
+      "category": "facts"
+    },
+    {
+      "id": "mp-012",
+      "title": "The 50/30/20 rule, actually explained",
+      "hook": "One budget split that fits on a sticky note.",
+      "lines": [
+        "50% of income: needs — rent, food, bills.",
+        "30%: wants — the fun stuff, guilt-free.",
+        "20%: savings and debt payoff.",
+        "Not perfect for everyone — but a real starting point."
+      ],
+      "cta": "Save this before payday hits.",
+      "hashtags": ["#budgetingtips", "#503020rule", "#personalfinance", "#moneytips", "#financialplanning"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-013",
+      "title": "Why 'free shipping over $50' works on you",
+      "hook": "You add a $12 item you didn't want to unlock free $5 shipping.",
+      "lines": [
+        "You just spent $7 more to 'save' $5.",
+        "Retailers know the threshold trick works almost every time.",
+        "The fix is boring but effective:",
+        "Decide your cart total before you shop, not during."
+      ],
+      "cta": "Next time you see 'free shipping over X', pause first.",
+      "hashtags": ["#shoppinghacks", "#moneytips", "#consumerpsychology", "#savingmoney", "#budgeting"],
+      "category": "cognitive-bias"
+    },
+    {
+      "id": "mp-014",
+      "title": "The emergency fund number nobody tells you",
+      "hook": "3–6 months of expenses — not income.",
+      "lines": [
+        "Expenses are usually 40–60% lower than income.",
+        "That means the real target is smaller than people assume.",
+        "Start with one month. Then build from there.",
+        "A partial cushion still beats zero cushion."
+      ],
+      "cta": "What's your number? Do the math this week.",
+      "hashtags": ["#emergencyfund", "#personalfinance", "#savingmoney", "#financialsecurity", "#moneytips"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-015",
+      "title": "Why comparing salaries online lies to you",
+      "hook": "The number you see almost never includes the full picture.",
+      "lines": [
+        "Cost of living, taxes, benefits, hours — all invisible in a headline salary.",
+        "A $90k job in one city can out-earn $130k in another, after real costs.",
+        "Compare take-home and cost of living, not headline numbers.",
+        "The flex isn't the salary. It's what's left after life."
+      ],
+      "cta": "Save this before your next negotiation.",
+      "hashtags": ["#salarynegotiation", "#costofliving", "#personalfinance", "#careertips", "#moneyfacts"],
+      "category": "facts"
+    },
+    {
+      "id": "mp-016",
+      "title": "The paradox of the pay raise you negotiated",
+      "hook": "People who negotiate their salary once are far more likely to do it again.",
+      "lines": [
+        "The first ask is the hardest — it rewires your default.",
+        "Most people never ask even once in their career.",
+        "The habit compounds more than the raise itself.",
+        "One conversation can change a decade of paychecks."
+      ],
+      "cta": "Follow for a script on how to actually ask.",
+      "hashtags": ["#salarynegotiation", "#careergrowth", "#moneytips", "#financialliteracy", "#worktips"],
+      "category": "mindset"
+    },
+    {
+      "id": "mp-017",
+      "title": "Why 'buy now, pay later' resets your brain",
+      "hook": "Splitting a purchase into 4 payments makes it feel 4x smaller.",
+      "lines": [
+        "$200 becomes '$50, no big deal'.",
+        "Your brain evaluates the installment, not the total.",
+        "Multiple BNPL plans stack fast and quietly.",
+        "Add them up before you tap 'pay later'."
+      ],
+      "cta": "Check how many active BNPL plans you actually have right now.",
+      "hashtags": ["#buynowpaylater", "#debtfree", "#moneytips", "#personalfinance", "#financialliteracy"],
+      "category": "cognitive-bias"
+    },
+    {
+      "id": "mp-018",
+      "title": "The 1-hour rule for big purchases",
+      "hook": "One rule that filters out almost every regret purchase.",
+      "lines": [
+        "Anything over a set amount waits 24 hours. No exceptions.",
+        "Most impulse urges fade within that window.",
+        "If you still want it tomorrow, it was a real want.",
+        "If you forgot about it, it wasn't."
+      ],
+      "cta": "Pick your number and set the rule today.",
+      "hashtags": ["#impulsebuying", "#moneytips", "#budgeting", "#mindfulspending", "#savingmoney"],
+      "category": "practical"
+    },
+    {
+      "id": "mp-019",
+      "title": "Why net worth beats income as a scoreboard",
+      "hook": "Two people earn $80k. One is broke. One is building wealth.",
+      "lines": [
+        "Income is what enters your hands.",
+        "Net worth is what's left after life takes its cut.",
+        "High earners with high spending can have less net worth than modest earners who save.",
+        "Track the number that actually compounds."
+      ],
+      "cta": "Do you track your net worth? Comment yes or no.",
+      "hashtags": ["#networth", "#wealthbuilding", "#personalfinance", "#financialliteracy", "#moneymindset"],
+      "category": "mindset"
+    },
+    {
+      "id": "mp-020",
+      "title": "The real cost of minimum payments",
+      "hook": "A $3,000 credit card balance at minimum payments can take over 10 years to clear.",
+      "lines": [
+        "And can cost more in interest than the original balance.",
+        "Minimum payments are designed to keep debt alive, not kill it.",
+        "Paying even a bit more than minimum changes the math fast.",
+        "Check your real payoff date — most people never have."
+      ],
+      "cta": "Look up your card's payoff calculator this week.",
+      "hashtags": ["#creditcarddebt", "#debtfree", "#personalfinance", "#moneytips", "#financialliteracy"],
+      "category": "facts"
+    }
+  ]
+}
