@@ -19,7 +19,7 @@ scripts/build_video.py         Video-Rendering (PIL + ffmpeg, keine externen Ass
 scripts/generate_video.py      Orchestrator: nächstes Skript -> fertiges Video
 poster/instagram_post.py       Auto-Posting zu Instagram Reels (Meta Graph API)
 poster/tiktok_post.py          Auto-Posting/Draft zu TikTok (Content Posting API)
-.github/workflows/daily-content.yml   Täglicher Cron-Job, 100% kostenlos
+.github/workflows/daily-content.yml   Manueller Workflow-Run (Actions → Run workflow)
 assets/music/                  optional: eigene MP3s hier rein, sonst automatisch generierte Musik
 ```
 
@@ -71,15 +71,13 @@ Hashtags) pro Video.
    einfacher fürs Hosting der Video-URLs, siehe unten — bei privatem Repo
    brauchst du stattdessen z. B. GitHub Releases + einen Token).
 2. Diesen Ordner hochladen/pushen.
-3. Fertig — der Workflow in `.github/workflows/daily-content.yml` läuft ab
-   jetzt automatisch **3× täglich** (12, 16 und 23 Uhr UTC — auf Peak-Zeiten
-   für ein US/UK-lastiges Publikum getrimmt) und erzeugt ein neues Video.
-   Manuell testen: Tab "Actions" → "Daily content run" → "Run workflow".
+3. Fertig — der Workflow in `.github/workflows/daily-content.yml` ist jetzt
+   nur noch manuell und erzeugt pro Run ein neues Video.
+   Starten: Tab "Actions" → "Daily content run" → "Run workflow".
 
-Das allein liefert dir bereits **täglich ein fertiges Video im Repo** — auch
-ganz ohne die Schritte 3/4 unten, die nur fürs *automatische Posten*
-gebraucht werden. Bis dahin: Video aus `output/` selbst hochladen dauert
-30 Sekunden pro Tag.
+Das allein liefert dir bereits ein fertiges Video im Repo, sobald du den
+Workflow startest — auch ganz ohne die Schritte 3/4 unten, die nur fürs
+*automatische Posten* gebraucht werden.
 
 ## Schritt 3 — Instagram Auto-Posting einrichten (kostenlos, einmalig)
 
@@ -101,7 +99,7 @@ Instagram (Meta) verlangt für automatisches Posten grundsätzlich eine
 6. Beides als GitHub-Secrets speichern: Repo → Settings → Secrets and
    variables → Actions → `IG_ACCESS_TOKEN`, `IG_BUSINESS_ACCOUNT_ID`.
 
-Danach postet der tägliche Workflow automatisch — ganz ohne dein Zutun.
+Danach postet der Workflow automatisch, wenn du ihn startest.
 
 ## Schritt 4 — TikTok Auto-Posting einrichten (kostenlos, einmalig)
 
